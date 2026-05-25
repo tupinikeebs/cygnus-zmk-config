@@ -14,7 +14,7 @@
 / {
     chosen {
         zmk,kscan = &default_kscan;
-        zmk,physical-layout = &foostan_corne_5col_layout;
+        zmk,physical-layout = &foostan_corne_6col_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -31,7 +31,7 @@
 
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+        diode-direction = "row2col";
         wakeup-source;
     };
 };
